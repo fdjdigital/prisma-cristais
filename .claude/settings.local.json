@@ -4,7 +4,8 @@
       "Read(//Users/mateus/Documents/**)",
       "Bash(find:*)",
       "Bash(cd:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": [],
     "ask": []
