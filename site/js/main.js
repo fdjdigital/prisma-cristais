@@ -263,16 +263,17 @@ document.addEventListener('DOMContentLoaded', function() {
   // ============================================
   // FORMULÁRIO DE CONTATO - VALIDAÇÃO
   // ============================================
-  const contactForm = document.querySelector('.contact-form');
+  const contactForm = document.querySelector('#contactForm');
 
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
 
       // Validação básica
-      const nome = this.querySelector('#nome');
+      const name = this.querySelector('#name');
       const email = this.querySelector('#email');
-      const mensagem = this.querySelector('#mensagem');
+      const subject = this.querySelector('#subject');
+      const message = this.querySelector('#message');
       let isValid = true;
 
       // Limpar erros anteriores
@@ -280,31 +281,49 @@ document.addEventListener('DOMContentLoaded', function() {
       errorMessages.forEach(msg => msg.remove());
 
       // Validar nome
-      if (nome.value.trim() === '') {
-        showError(nome, 'Por favor, insira seu nome');
+      if (name && name.value.trim() === '') {
+        showError(name, 'Por favor, insira seu nome');
         isValid = false;
       }
 
       // Validar email
-      if (email.value.trim() === '') {
+      if (email && email.value.trim() === '') {
         showError(email, 'Por favor, insira seu email');
         isValid = false;
-      } else if (!isValidEmail(email.value)) {
+      } else if (email && !isValidEmail(email.value)) {
         showError(email, 'Por favor, insira um email válido');
         isValid = false;
       }
 
+      // Validar assunto
+      if (subject && subject.value.trim() === '') {
+        showError(subject, 'Por favor, insira o assunto');
+        isValid = false;
+      }
+
       // Validar mensagem
-      if (mensagem.value.trim() === '') {
-        showError(mensagem, 'Por favor, insira sua mensagem');
+      if (message && message.value.trim() === '') {
+        showError(message, 'Por favor, insira sua mensagem');
         isValid = false;
       }
 
       if (isValid) {
-        // Aqui você pode adicionar a lógica de envio do formulário
-        // Por enquanto, vamos simular um envio bem-sucedido
-        showSuccessMessage();
-        this.reset();
+        // Enviar formulário para Formspree ou outro serviço
+        const formData = new FormData(this);
+        const submitButton = this.querySelector('button[type="submit"]');
+        const originalText = submitButton.textContent;
+
+        submitButton.textContent = 'Enviando...';
+        submitButton.disabled = true;
+
+        // Aqui você pode usar fetch para enviar o formulário
+        // Por enquanto, apenas simularemos o sucesso
+        setTimeout(() => {
+          showSuccessMessage();
+          this.reset();
+          submitButton.textContent = originalText;
+          submitButton.disabled = false;
+        }, 1500);
       }
     });
 

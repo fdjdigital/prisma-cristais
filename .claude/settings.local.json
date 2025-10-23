@@ -3,7 +3,8 @@
     "allow": [
       "Read(//Users/mateus/Documents/**)",
       "Bash(find:*)",
-      "Bash(cd:*)"
+      "Bash(cd:*)",
+      "Bash(git add:*)"
     ],
     "deny": [],
     "ask": []
