@@ -1,25 +1,41 @@
 # CLAUDE.md - Prisma Cristais
-**Versão:** 1.0
-**Última Atualização:** 21 de outubro de 2025
-**Criado por:** FDJ Digital (Domínio Digital)
+**Versão:** 2.0 (Unificada)
+**Última Atualização:** Outubro 2025
+**Desenvolvido por:** FDJ Digital
 
 ---
 
 ## ÍNDICE
 
+### PARTE I: VISÃO ESTRATÉGICA E IDENTIDADE
 1. [Visão Geral do Projeto](#visão-geral-do-projeto)
 2. [Identidade Visual](#identidade-visual)
 3. [Tom de Voz e Copy](#tom-de-voz-e-copy)
 4. [Produtos e Serviços](#produtos-e-serviços)
 5. [Público-Alvo](#público-alvo)
 6. [Palavras-chave SEO](#palavras-chave-seo)
+
+### PARTE II: PADRÕES TÉCNICOS E DESENVOLVIMENTO
 7. [Estrutura do Site](#estrutura-do-site)
-8. [Links Importantes](#links-importantes)
-9. [Requisitos Técnicos](#requisitos-técnicos)
-10. [Padrões e Convenções](#padrões-e-convenções)
-11. [Workflow de Criação de Conteúdo](#workflow-de-criação-de-conteúdo)
+8. [Padrões de Layout para Blogs](#padrões-de-layout-para-blogs)
+9. [Checklist de SEO para Imagens](#checklist-de-seo-para-imagens)
+10. [Rotas e Redirecionamentos](#rotas-e-redirecionamentos)
+11. [Padrão de Datas](#padrão-de-datas)
+12. [Schema.org para Articles](#schemaorg-para-articles)
+13. [Mensagem Institucional de Entrega](#mensagem-institucional-de-entrega)
+14. [WhatsApp Padrão](#whatsapp-padrão)
+15. [Responsividade e Acessibilidade](#responsividade-e-acessibilidade)
+16. [Performance](#performance)
+
+### PARTE III: OPERAÇÃO E WORKFLOW
+17. [Requisitos Técnicos](#requisitos-técnicos)
+18. [Padrões e Convenções](#padrões-e-convenções)
+19. [Workflow de Criação de Conteúdo](#workflow-de-criação-de-conteúdo)
+20. [Checklist de Qualidade](#checklist-de-qualidade)
 
 ---
+
+# PARTE I: VISÃO ESTRATÉGICA E IDENTIDADE
 
 ## VISÃO GERAL DO PROJETO
 
@@ -28,141 +44,102 @@
 **Conceito Central:**
 "O cliente jamais será impedido de sonhar" - atendimento de projetos personalizados e exclusivos
 
+**Slogan Principal:**
+"Onde cada pedra revela sua luz única"
+
 **Posicionamento:**
 - NÃO é uma "lojinha mística"
 - É um negócio premium e profissional
-- Foco em cristais de alto padrão para o nicho Home Decor
-- Inspiração na raridade da Turmalina Paraíba (uma das gemas mais raras do planeta)
+- Foco em cristais decorativos de alto padrão
+- Exclusividade, sofisticação e autenticidade
+- Credibilidade científica (fornecedor geólogo)
+- Projetos personalizados sem limites
+- Atendimento consultivo e personalizado
 
 **Diferencial Competitivo:**
 - Produtos genuinamente exclusivos (peças únicas, não reprodutíveis)
 - Capacidade de personalização total (qualquer projeto que o cliente sonhar)
 - Credibilidade técnica (fornecedor geólogo - Léo)
 - Storytelling individualizado para cada peça premium
-
-**Slogan/Tagline:**
-"Onde cada pedra revela sua luz única"
-
-**Expansões Futuras:**
-- Paisagismo (como submarca)
-- Artigos religiosos (como submarca)
+- Inspiração na raridade da Turmalina Paraíba (uma das gemas mais raras do planeta)
 
 ---
 
 ## IDENTIDADE VISUAL
 
-### **1. LOGO**
+### **PALETA DE CORES (NÃO ALTERAR)**
 
-**Conceito:**
-- Abordagem arquitetônica premium
-- Representa a estrutura interna complexa de um cristal
-- Sugere facetas internas que formam a refração da luz
-- Minimalismo premium (clean, duas cores, flat design)
-- Originalidade absoluta - não usa formas óbvias de mercado
-
-**Tipografia do Logo:**
-- Fonte: **Montserrat Medium (500)** - NUNCA alterar
-- Cor padrão: Turmalina Paraíba `#15B6B8`
-- Alternativas: Prisma Black `#000000` ou Crystal White `#FFFFFF`
-- Tamanho mínimo: 32px para legibilidade
-
-**Inspiração Conceitual:**
-A Turmalina Paraíba - uma das gemas mais raras do planeta, com valores que ultrapassam US$ 100.000 por quilate. Representa exclusividade, raridade e impossibilidade de replicação.
-
----
-
-### **2. PALETA DE CORES**
-
-#### **CORES PRINCIPAIS**
-
-**TURMALINA PARAÍBA** (Cor Primária)
+#### Cores Principais
+**TURMALINA PARAÍBA** (Primária)
 - HEX: `#15B6B8`
 - RGB: 21, 182, 184
-- CMYK: 88, 1, 0, 28
-- **Aplicação:** Logo principal, CTAs, links importantes, destaques premium
+- Aplicação: Logo, CTAs, links, destaques premium
 
 **TURMALINA SECUNDÁRIA** (Gradientes)
 - HEX: `#099D7F`
 - RGB: 9, 157, 127
-- CMYK: 94, 0, 19, 38
-- **Aplicação:** Gradientes com cor primária, variações da marca, fundos dinâmicos
+- Aplicação: Gradientes, variações, fundos dinâmicos
 
-#### **CORES NEUTRAS**
+#### Cores Neutras
+**PRISMA BLACK** - `#000000`
+Tipografia principal, contrastes máximos
 
-**PRISMA BLACK**
-- HEX: `#000000`
-- **Aplicação:** Tipografia principal, textos importantes, contrastes máximos
-
-**CRYSTAL WHITE**
-- HEX: `#FFFFFF`
-- **Aplicação:** Fundos principais, textos sobre cores escuras, espaços de respiro
-
-#### **ESCALA DE CINZAS**
+**CRYSTAL WHITE** - `#FFFFFF`
+Fundos principais, textos sobre escuros
 
 **GRAPHITE** - `#2C2C2C`
-Subtítulos, textos secundários, ícones
+Subtítulos, textos secundários
 
 **SLATE** - `#6B6B6B`
-Textos auxiliares, separadores, elementos discretos
+Textos auxiliares, separadores
 
 **PEARL** - `#F5F5F5`
-Fundos de seções, cards, áreas de destaque suave
+Fundos de seções, cards
 
 **MIST** - `#FAFAFA`
-Fundos alternativos, hover effects, áreas de respiro
+Fundos alternativos, hover effects
 
-#### **CORES DE APOIO**
-
+#### Cores de Apoio
 **CHAMPAGNE GOLD** - `#C9A96E`
-Elementos premium, certificações, badges VIP (usar com parcimônia)
+Elementos premium, badges VIP (usar com parcimônia)
 
 **SAGE** - `#8FB8AA`
-Elementos naturais, sustentabilidade, jardim
+Elementos naturais, sustentabilidade
 
-#### **CORES DE SISTEMA**
-
-**SUCCESS GREEN** - `#10B981`
-**WARNING AMBER** - `#F59E0B`
-**ERROR RED** - `#EF4444`
-
-#### **GRADIENTES APROVADOS**
-
-**Gradiente Principal:**
+#### Gradiente Principal
 ```css
 linear-gradient(45deg, #15B6B8, #099D7F)
 ```
 
 **Regras de Uso:**
-- Usar 70% neutros, 20% Turmalina, 10% apoio
-- Priorizar combinações Prisma Black + Crystal White
-- Champagne Gold apenas para elementos VIP/Premium
-- Turmalina Paraíba sempre em destaque, nunca como fundo de texto
+- 70% neutros, 20% Turmalina, 10% apoio
+- Priorizar Prisma Black + Crystal White
+- Champagne Gold apenas para VIP/Premium
+- Turmalina Paraíba sempre em destaque
 
 ---
 
-### **3. TIPOGRAFIA**
+### **TIPOGRAFIA (NÃO ALTERAR)**
 
-#### **HIERARQUIA TIPOGRÁFICA**
+**Fonte Principal: MONTSERRAT**
+- Aplicação: Logo, títulos principais, headings, navegação
+- Pesos: Light (300), Regular (400), Medium (500), Semibold (600), Bold (700)
+- Características: Moderna, elegante, premium
 
-**Fonte Principal: MONTSERRAT** (Google Fonts)
-- **Aplicação:** Logotipo, títulos principais, elementos de destaque
-- **Características:** Moderna, elegante, alta legibilidade, premium
-- **Pesos disponíveis:** Light (300), Regular (400), Medium (500), Semibold (600), Bold (700)
+**Fonte Secundária: INTER**
+- Aplicação: Corpo de texto, parágrafos, descrições
+- Pesos: Light (300), Regular (400), Medium (500), Semibold (600)
+- Características: Alta legibilidade, otimizada para UI
 
-**Fonte Secundária: INTER** (Google Fonts)
-- **Aplicação:** Textos longos, descrições de produtos, conteúdo geral
-- **Características:** Excelente legibilidade em telas, otimizada para UI
-- **Pesos disponíveis:** Light (300), Regular (400), Medium (500), Semibold (600)
-
-#### **TAMANHOS PADRÃO**
+#### Tamanhos Padrão
 
 **Desktop:**
 - H1: 48px (Montserrat Semibold)
 - H2: 36px (Montserrat Medium)
 - H3: 28px (Montserrat Medium)
 - H4: 24px (Montserrat Regular)
-- Parágrafo Principal: 16px (Inter Regular)
-- Parágrafo Secundário: 14px (Inter Regular)
+- Parágrafo: 16px (Inter Regular)
+- Secundário: 14px (Inter Regular)
 
 **Mobile:**
 - H1: 36px
@@ -171,14 +148,7 @@ linear-gradient(45deg, #15B6B8, #099D7F)
 - H4: 20px
 - Parágrafo: 14px mínimo
 
-#### **ELEMENTOS ESPECIAIS**
-
-- **Preços Principais:** 32px (Montserrat Semibold)
-- **Botões Principais:** 16px (Montserrat Medium)
-- **Títulos de Produtos Premium:** 24px (Montserrat Semibold)
-- **Descrições de Produtos:** 16px (Inter Regular)
-
-**Carregamento de Fontes:**
+**Carregamento:**
 ```html
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 ```
@@ -193,54 +163,36 @@ linear-gradient(45deg, #15B6B8, #099D7F)
 - Premium e sofisticado (não formal demais)
 - Emocional (não excessivamente técnico)
 - Educativo quando necessário
-- Storytelling forte (história, origem, raridade de cada peça)
+- Storytelling forte (história, origem, raridade)
 
 **O QUE FAZER:**
 - Transformar linguagem técnica em emocional
 - Enfatizar exclusividade e origem
-- Usar storytelling individualizado para cada peça
-- Criar conexões emocionais com os produtos
+- Usar storytelling individualizado
+- Criar conexões emocionais
 - Valorizar raridade e unicidade
-- Manter credibilidade científica quando apropriado
-- Focar em "quem aprecia qualidade", "quem valoriza exclusividade", "para amantes de decoração sofisticada"
-- Linguagem inclusiva e acolhedora, mantendo elegância
+- Manter credibilidade científica
+- Focar em "quem aprecia qualidade"
+- Linguagem inclusiva e acolhedora
 
 **O QUE EVITAR:**
-- Linguagem excessivamente mística/espiritual
-- Termos muito técnicos sem contexto
-- Tom excessivamente elitista ou preconceituoso
-- Menções a classes sociais (classe A, classe B, alta renda, público de elite)
-- Descontos agressivos que desvalorizam peças únicas
+- Linguagem excessivamente mística
+- Termos técnicos sem contexto
+- Tom elitista ou preconceituoso
+- Menções a classes sociais
+- Descontos agressivos
 - Comparações com concorrentes
-
-### **ABORDAGEM INCLUSIVA**
-
-**Para Quem Aprecia Qualidade:**
-- Foco em exclusividade autêntica e raridade
-- Storytelling profundo e envolvente
-- Ênfase em personalização e atendimento consultivo
-- Valorização da unicidade sem mencionar poder aquisitivo
-- Linguagem: "para quem valoriza peças únicas", "para amantes de decoração sofisticada", "para quem aprecia qualidade genuína"
-
-**Descontos e Precificação:**
-- Evitar descontos agressivos que desvalorizem a raridade
-- Foco no valor intrínseco de cada peça
-- Transparência sobre qualidade e procedência
-- Atendimento personalizado para projetos especiais
 
 ### **ESTRUTURA DE STORYTELLING**
 
 Toda peça premium deve conter:
 
-1. **Gênese/Origem** - Como a pedra foi formada
-2. **Raridade Geológica** - Por que é única/especial
-3. **História Cultural** - Significado ancestral/cultural
-4. **Aplicações Científicas** - Usos modernos/validação científica
-5. **Propriedades Energéticas** - Significado espiritual (quando aplicável)
-6. **Proposta de Valor** - Por que investir nesta peça
-
-**Exemplo de Aplicação:**
-Ver arquivo: `/Obsidiana/Storytelling Completo para Obsidiana Preta Pura -.md`
+1. **Gênese/Origem** - Como foi formada
+2. **Raridade Geológica** - Por que é única
+3. **História Cultural** - Significado ancestral
+4. **Aplicações Científicas** - Usos modernos
+5. **Propriedades Energéticas** - Significado espiritual
+6. **Proposta de Valor** - Por que investir
 
 ---
 
@@ -248,804 +200,674 @@ Ver arquivo: `/Obsidiana/Storytelling Completo para Obsidiana Preta Pura -.md`
 
 ### **CATEGORIAS DE PRODUTOS**
 
-#### **1. PREMIUM (R$ 3.500 - R$ 30.000+)**
-**Canal:** Site próprio + WhatsApp
-- Esferas de obsidiana negra (peça âncora)
-- Cristais brutos de grande porte (90-600kg)
+#### Premium (R$ 3.500 - R$ 30.000+)
+- Esferas de obsidiana negra
+- Cristais brutos grandes (90-600kg)
 - Esculturas personalizadas
 - Mandalas artísticas
-- Móveis de pedra (mesas de jantar completas)
+- Móveis de pedra
 
-#### **2. INTERMEDIÁRIO (R$ 800 - R$ 3.500)**
-**Canal:** Site próprio
+#### Intermediário (R$ 800 - R$ 3.500)
 - Esferas médias
 - Cristais decorativos para jardim
-- Peças artísticas de médio porte
-- Objetos decorativos exclusivos
+- Peças artísticas médio porte
 
-#### **3. ACESSÍVEL (R$ 50 - R$ 800)**
-**Canal:** Marketplaces (Mercado Livre, Shopee)
+#### Acessível (R$ 50 - R$ 800)
 - Peças pequenas
-- Pulseiras (brindes ou produtos de entrada)
+- Pulseiras (brindes/entrada)
 - Cristais decorativos menores
 
 ### **SERVIÇOS PERSONALIZADOS**
 
-**Diferencial Competitivo:**
-- Projetos arquitetônicos (Santa Ceia ou mandalas embutidas em paredes)
-- Móveis sob medida (banheiras de hidromassagem, mesas, aparadores)
-- Decoração completa (paredes, portas, cristaleiras de pedra artesanal)
+- Projetos arquitetônicos (mandalas, Santa Ceia em paredes)
+- Móveis sob medida (banheiras, mesas, aparadores)
+- Decoração completa (paredes, portas, cristaleiras)
 - Prateleiras de pedra personalizadas
-- Atendimento in loco (equipe vai à casa do cliente para projetos grandes)
-
-### **FORNECIMENTO E LOGÍSTICA**
-
-**Fornecedor Principal:**
-- Léo (geólogo) - empresa "Pedras que Curam"
-- Credibilidade científica agregada
-- Possibilidade de dropshipping (envio direto com etiqueta Prisma)
-
-**Origem dos Produtos:**
-- Curvelo, Brasília, Goiás
-- Fornecedores confiáveis validados
-
-**Estoque:**
-- Produtos em casa (pronta entrega)
-- Produtos no fornecedor (dropshipping)
-- Lotes especiais (compra sob demanda)
+- Atendimento in loco para projetos grandes
 
 ---
 
 ## PÚBLICO-ALVO
 
-### **SEGMENTAÇÃO PRINCIPAL**
+### **PARA QUEM APRECIA QUALIDADE E EXCLUSIVIDADE**
 
-#### **PARA QUEM APRECIA QUALIDADE E EXCLUSIVIDADE**
 **Perfil:**
-- Pessoas que valorizam peças únicas e exclusivas
-- Amantes de decoração sofisticada e diferenciada
-- Localização: Nova Lima e região metropolitana BH
-- Buscam autenticidade e qualidade genuína
-- Apreciam atendimento personalizado e consultivo
-- Valorizam a história e procedência de cada peça
+- Pessoas que valorizam peças únicas
+- Amantes de decoração sofisticada
+- Localização: Nova Lima, Belo Horizonte e região
+- Buscam autenticidade e qualidade
+- Apreciam atendimento personalizado
+- Valorizam história e procedência
 
-**Comportamento de Compra:**
-- Decisão baseada em emoção, exclusividade e qualidade
-- Valorizam atendimento consultivo e personalizado
-- Preferem projetos personalizados e únicos
-- Apreciam transparência sobre origem e autenticidade
-- Canal: WhatsApp + visita presencial (para projetos grandes)
-- Buscam peças que ninguém mais terá
-
-#### **AMANTES DE DECORAÇÃO PREMIUM**
-**Perfil:**
-- Apreciam beleza e sofisticação
-- Buscam itens que transformem ambientes
-- Valorizam durabilidade e qualidade
-- Interessados em conhecer a história das pedras
-- Prezam por autenticidade científica
-
-**Comportamento de Compra:**
-- Pesquisam antes de comprar
-- Valorizam informações técnicas e credibilidade
-- Apreciam transparência sobre procedência
-- Canal: Loja Online + WhatsApp
-
-### **SEGMENTOS ESPECÍFICOS**
-
-**Arquitetos e Decoradores:**
-- Profissionais buscando peças exclusivas para projetos
-- Valorizam parceria de longo prazo
-- Necessitam de variedade e qualidade consistente
-
-**Paisagistas:**
-- Cristais para jardins (90-600kg)
-- Projetos de decoração externa
-- Parceria com Alan (paisagista)
-
-**Consumidor Final:**
-- Paixão por cristais e decoração
-- Busca por peças únicas
-- Interesse em propriedades energéticas/místicas
+**Comportamento:**
+- Decisão baseada em emoção e qualidade
+- Valorizam consultoria especializada
+- Preferem projetos personalizados
+- Apreciam transparência
+- Buscam peças exclusivas
 
 ---
 
 ## PALAVRAS-CHAVE SEO
 
-### **PALAVRAS-CHAVE PRINCIPAIS**
-
-**Produtos Gerais:**
+### Produtos Gerais
 - cristais decorativos
 - cristais de alto padrão
-- cristais para decoração
-- cristais para casa
 - cristais premium
 - pedras decorativas
-- pedras ornamentais
 
-**Produtos Específicos:**
+### Produtos Específicos
 - obsidiana preta
-- obsidiana negra
 - esfera de obsidiana
 - esfera de cristal
 - cristal bruto
 - ametista decorativa
-- quartzo decorativo
 
-**Serviços:**
+### Serviços
 - projetos personalizados com cristais
 - móveis de pedra natural
 - decoração com cristais
 - cristais para arquitetura
-- cristais para paisagismo
-- mesa de pedra natural
 
-**Geolocalização:**
+### Geolocalização
 - cristais Nova Lima
 - cristais Belo Horizonte
 - cristais BH
-- cristais Minas Gerais
 - decoração premium Nova Lima
 
-**Long-tail Keywords:**
+### Long-tail
 - onde comprar cristais de alto padrão
 - cristais decorativos exclusivos
-- projetos personalizados com pedras naturais
-- decoração premium com cristais
-- cristais para arquitetos
-- esfera de obsidiana preta pura
-- cristais brutos para jardim
-
-**Palavras-chave de Autoridade:**
-- propriedades da obsidiana
-- significado dos cristais
-- como decorar com cristais
-- cristais na arquitetura
-- história da obsidiana
-- formação geológica de cristais
+- projetos personalizados pedras naturais
 
 ---
+
+# PARTE II: PADRÕES TÉCNICOS E DESENVOLVIMENTO
 
 ## ESTRUTURA DO SITE
 
-### **ARQUITETURA DA INFORMAÇÃO**
-
+### Arquitetura Atual
 ```
 Home
 ├── Sobre a Prisma
-│   ├── Nossa História
-│   ├── Missão e Valores
-│   └── Diferenciais (Credibilidade Científica com Geólogo)
-│
 ├── Blog / Conhecimento
-│   ├── Propriedades dos Cristais
-│   ├── História e Significado
-│   ├── Guia de Cuidados
-│   ├── Decoração com Cristais
-│   └── Projetos Inspiradores
-│
 ├── Contato
-│   ├── WhatsApp (canal principal)
-│   ├── Instagram
-│   └── Formulário
-│
 └── Loja Online (link externo)
-    └── https://prismacristais.com/loja/
+    https://prismacristais.com/loja/
 ```
 
-**IMPORTANTE:** As páginas Produtos e Galeria foram REMOVIDAS.
-O site institucional foca em: Home, Sobre, Blog e Contato.
-A venda acontece através da Loja Online (link externo no menu).
-
-### **PÁGINAS ESSENCIAIS**
-
-#### **Home Page**
-- Hero section com imagem premium
-- Apresentação do conceito "O cliente jamais será impedido de sonhar"
-- Destaques de produtos premium
-- CTA principal para WhatsApp
-- Galeria de projetos realizados
-- Depoimentos (futuro)
-
-#### **Página de Produto (Template)**
-**Estrutura obrigatória:**
-1. Galeria de imagens (mínimo 4 imagens)
-   - Foto principal
-   - Ambientação (casa/escritório/jardim)
-   - Detalhes
-   - Escala/dimensões
-
-2. Título do produto (H1)
-   - Nome descritivo + diferencial
-
-3. Preço
-   - Valor destacado
-   - Opções de pagamento
-   - Desconto à vista (quando aplicável)
-
-4. Descrição Curta
-   - Resumo premium e objetivo
-   - 2-3 parágrafos
-
-5. CTA Principal
-   - "Consultar Disponibilidade no WhatsApp"
-   - Botão em Turmalina Paraíba
-
-6. Descrição Longa (Storytelling)
-   - Gênese/Origem
-   - Raridade geológica
-   - História cultural
-   - Aplicações científicas
-   - Propriedades energéticas
-   - Proposta de valor
-
-7. Especificações Técnicas
-   - Dimensões
-   - Peso
-   - Origem
-   - Pureza/Qualidade
-   - Certificações
-
-8. Produtos Relacionados
-
-#### **Página de Categoria**
-- Grid de produtos
-- Filtros (preço, tamanho, tipo de pedra)
-- Ordenação (relevância, preço, novidades)
-- Paginação
-
-#### **Blog/Artigos**
-- Artigos educativos (4/mês a partir do mês 3)
-- Conteúdo de autoridade
-- SEO otimizado
-- Compartilhamento social
+**IMPORTANTE:** Páginas Produtos e Galeria foram REMOVIDAS.
+Site institucional: Home, Sobre, Blog, Contato.
 
 ---
 
-## LINKS IMPORTANTES
+## PADRÕES DE LAYOUT PARA BLOGS
 
-### **CANAIS OFICIAIS**
+### Estrutura Obrigatória de Post
 
-**Loja Online:**
-https://prismacristais.com/loja/
+```html
+<!-- Breadcrumb -->
+<div class="article-breadcrumb">
+    <a href="/home/">Home</a> / <a href="/blog/">Blog</a> / Título
+</div>
 
-**Instagram:**
-https://www.instagram.com/prismacristaisdecor/
+<!-- Cabeçalho -->
+<h1 class="article-title">Título Principal do Post</h1>
 
-**WhatsApp Business:**
-Canal principal de conversão e atendimento
+<!-- Metadados -->
+<div class="article-meta">
+    <span>📅 DD de MMM de AAAA</span>
+    <span>📖 X minutos de leitura</span>
+    <span>✍️ Equipe Prisma Cristais</span>
+</div>
 
-**Domínios:**
-- prismacristais.com (adquirido)
-- prismacristais.com.br (proteção de marca)
+<!-- Imagem Destaque -->
+<img
+    src="../../images/nome-arquivo.webp"
+    alt="Descrição SEO completa"
+    title="Título descritivo"
+    width="900"
+    height="500"
+    loading="eager"
+    decoding="async"
+    class="article-featured-image">
 
-### **REDES SOCIAIS - DIRETRIZES**
+<!-- Conteúdo -->
+<div class="article-content">
+    <p class="article-intro">Parágrafo introdutório...</p>
+    <h2>Seção</h2>
+    <p>Conteúdo...</p>
+</div>
 
-**Instagram (@prismacristaisdecor):**
-- Perfil profissional/business
-- Grid visual premium
-- Bio otimizada com link para site
-- Stories com gradiente Turmalina
-- Destaques organizados por categoria
-- Conteúdo: produtos, projetos, educativo, bastidores
-- Frequência: mínimo 3 posts/semana
+<!-- CTA -->
+<div class="article-cta">
+    <h3>Título CTA</h3>
+    <p style="margin-bottom: 2rem;">Descrição</p>
+    <div class="btn-group">
+        <a href="#" class="btn btn-primary">Ação</a>
+    </div>
+</div>
 
-**WhatsApp Business:**
-- Número específico do negócio
-- Catálogo digital configurado
-- Atendimento consultivo pela Marcela
-- Respostas rápidas configuradas
-- Status comercial ativo
+<!-- Posts Relacionados -->
+<div class="related-posts">
+    <h2 class="text-center">Leia Também</h2>
+    <div class="blog-grid"><!-- 3 cards --></div>
+</div>
+```
 
-**Facebook (Futuro):**
-- Página empresarial vinculada ao Instagram
-- Integração com catálogo
+### Hierarquia de Títulos
+- **H1**: 1 por página - título principal
+- **H2**: Seções principais
+- **H3**: Subseções
+- **H4-H6**: Uso esporádico
+
+### Espaçamentos Padrão
+- Entre H2 e conteúdo: `var(--spacing-lg)` (2rem)
+- Entre parágrafos: `var(--spacing-md)` (1.5rem)
+- Entre seções: `var(--spacing-3xl)` (6rem)
+
+### Largura de Conteúdo
+- Container artigo: `max-width: 900px`
+- Conteúdo texto: `max-width: 720px`
+- Centrado: `margin: 0 auto`
 
 ---
+
+## CHECKLIST DE SEO PARA IMAGENS
+
+### Atributos Obrigatórios
+```html
+<img
+    src="caminho/imagem.webp"
+    alt="Descrição em PT-BR com palavras-chave naturais"
+    title="Título descritivo curto"
+    width="XXX"
+    height="YYY"
+    loading="lazy"
+    decoding="async"
+    class="classe">
+```
+
+### Diretrizes ALT Text
+✅ Descrição clara e objetiva
+✅ Palavras-chave naturais
+✅ Mencionar "Prisma Cristais" quando relevante
+✅ PT-BR, sem caracteres especiais
+❌ Não usar "imagem de", "foto de"
+❌ Não fazer keyword stuffing
+
+**Bom:** `alt="Esfera de obsidiana preta premium - cristal vulcânico raro para decoração sofisticada"`
+**Ruim:** `alt="imagem de cristal"`
+
+### Diretrizes TITLE
+- Complementar ALT, não repetir
+- Mais conciso
+- Foco em benefício
+
+**Exemplo:** `title="Esfera Obsidiana Preta Premium - Cristal Vulcânico Natural"`
+
+### Figcaption
+```html
+<figure>
+    <img ...>
+    <figcaption>Legenda contextualizada</figcaption>
+</figure>
+```
+
+### Nomes de Arquivo SEO-Friendly
+**Padrão:** `descricao-com-hifens-marca-prisma-cristais.webp`
+
+✅ `esfera-obsidiana-preta-cristal-premium-prisma-cristais.webp`
+❌ `IMG_1234.jpg`
+
+### Dimensões e Performance
+- Sempre definir `width` e `height` (evita CLS)
+- Cards: `400x250` ou `400x220`
+- Imagem post: `900x500`
+- Formato: **WebP**
+- Tamanho: 20-60KB ideal
+- `loading="lazy"` (exceto above-the-fold)
+- `loading="eager"` imagem principal post
+- `decoding="async"` sempre
+
+### Sizes e Srcset (Responsivo)
+```html
+<img
+    src="imagem.webp"
+    srcset="imagem-400.webp 400w,
+            imagem-800.webp 800w,
+            imagem-1200.webp 1200w"
+    sizes="(max-width: 768px) 100vw, 50vw"
+    alt="...">
+```
+
+---
+
+## ROTAS E REDIRECIONAMENTOS
+
+### Regra /produtos → /loja
+❌ **NÃO existe** `/produtos/`
+✅ **Usar sempre** `https://prismacristais.com/loja/`
+✅ Links com `target="_blank" rel="noopener"`
+
+### Redirect 308 (Permanente)
+```
+/produtos -> https://prismacristais.com/loja/ [308]
+/produtos/* -> https://prismacristais.com/loja/ [308]
+```
+
+Preservar query strings:
+```
+/produtos?id=123 -> /loja/?id=123
+```
+
+---
+
+## PADRÃO DE DATAS
+
+### Formato Exibição (PT-BR)
+- **Completo:** `DD de MMM de AAAA` (10 de outubro de 2025)
+- **Curto:** `DD MMM AAAA` (10 out 2025)
+
+### Schema.org JSON-LD
+```json
+{
+  "datePublished": "2025-10-10",
+  "dateModified": "2025-10-10"
+}
+```
+
+### Timezone
+- Brasil/Brasília: UTC-3
+- Formato: `2025-10-10T10:00:00-03:00`
+
+### Meses Abreviados
+```
+jan, fev, mar, abr, mai, jun, jul, ago, set, out, nov, dez
+```
+
+### Atualização
+- `datePublished`: Data original (não alterar)
+- `dateModified`: Última modificação substancial
+- Coerência HTML ↔ JSON-LD
+
+---
+
+## SCHEMA.ORG PARA ARTICLES
+
+### Estrutura Padrão
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Título (máx 110 caracteres)",
+  "description": "Descrição concisa",
+  "image": "https://prismacristais.com/images/imagem.webp",
+  "datePublished": "2025-10-10",
+  "dateModified": "2025-10-10",
+  "author": {
+    "@type": "Organization",
+    "name": "Prisma Cristais"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Prisma Cristais",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://prismacristais.com/images/logo-horizontal.png"
+    }
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://prismacristais.com/blog/nome-post/"
+  }
+}
+```
+
+### Campos Obrigatórios
+✅ headline
+✅ image
+✅ datePublished
+✅ author
+✅ publisher (com logo)
+
+### Campos Recomendados
+✅ description
+✅ dateModified
+✅ mainEntityOfPage
+
+---
+
+## MENSAGEM INSTITUCIONAL DE ENTREGA
+
+### Texto Padrão
+```
+🚚 Entregamos para todo o Brasil por transportadora segura
+```
+
+### Onde Exibir
+1. Home: CTA "Pronto para Transformar Seu Espaço?"
+2. Sobre: CTA "Pronto para Conhecer Nossa Coleção?"
+3. Blog: CTA final
+4. Contato: Abaixo formulário (opcional)
+5. Footer: Badge institucional (opcional)
+
+### Como Exibir
+```html
+<p style="margin: 0 auto 2rem auto; color: var(--turmalina-paraiba); font-weight: 500; font-size: 15px;">
+    🚚 Entregamos para todo o Brasil por transportadora segura
+</p>
+```
+
+### Badge CSS
+```html
+<div class="footer-shipping-badge">
+    🚚 Entregamos para todo o Brasil por transportadora segura
+</div>
+```
+
+---
+
+## WHATSAPP PADRÃO
+
+### Número Oficial
+```
++55 31 99976-7916
+```
+
+### Link Formatado
+```
+https://wa.me/5531999767916?text=Vim%20do%20site%20e%20quero%20conhecer%20o%20que%20a%20Prisma%20tem%20a%20me%20oferecer
+```
+
+### Implementação
+```html
+<a href="https://wa.me/5531999767916?text=Vim%20do%20site%20e%20quero%20conhecer%20o%20que%20a%20Prisma%20tem%20a%20me%20oferecer"
+   class="btn btn-primary"
+   target="_blank"
+   rel="noopener">
+    Falar no WhatsApp
+</a>
+```
+
+---
+
+## RESPONSIVIDADE E ACESSIBILIDADE
+
+### Critérios Acessibilidade
+- Contraste mínimo: WCAG AA (4.5:1)
+- `aria-label` em botões com ícones
+- Imagens decorativas: `alt=""`
+- Imagens informativas: `alt` descritivo
+- Formulários: `<label>` associado
+- Navegação por teclado funcional
+
+### Breakpoints
+```css
+/* Mobile */
+@media (max-width: 768px) { }
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) { }
+
+/* Desktop */
+@media (min-width: 1025px) { }
+```
+
+### Mobile-First
+- Logo centralizado mobile
+- Menu hamburguer à direita
+- Botões full-width mobile
+- Espaçamentos proporcionais
+
+---
+
+## PERFORMANCE
+
+### Otimizações Obrigatórias
+✅ Imagens WebP comprimidas
+✅ Lazy loading (exceto above-the-fold)
+✅ Width/height definidos (CLS)
+✅ Fontes `font-display: swap`
+✅ Preload recursos críticos
+✅ Minificação CSS/JS produção
+
+### Core Web Vitals
+- **LCP** < 2.5s
+- **FID** < 100ms
+- **CLS** < 0.1
+
+### Checklist Pré-Deploy
+- [ ] Imagens WebP < 100KB
+- [ ] Alt text completo
+- [ ] Schema.org correto
+- [ ] WhatsApp atualizado
+- [ ] Datas Outubro 2025
+- [ ] Mensagem entrega Brasil
+- [ ] Links /loja corretos
+- [ ] Responsividade OK
+- [ ] Lighthouse > 90
+
+---
+
+# PARTE III: OPERAÇÃO E WORKFLOW
 
 ## REQUISITOS TÉCNICOS
 
-### **PLATAFORMA E HOSPEDAGEM**
+### Plataforma
+- E-commerce: WooCommerce (WordPress)
+- Domínio: prismacristais.com
+- SSL: HTTPS obrigatório
 
-**E-commerce:**
-- Plataforma: WooCommerce (WordPress)
-- Hospedagem: Já adquirida (R$ 500-600/ano)
-- SSL: Obrigatório (HTTPS)
+### Google Tag Manager
+**ID:** `GTM-PCR9HB87`
 
-**Domínio:**
-- Principal: prismacristais.com
-- Proteção: prismacristais.com.br
-
-### **INTEGRAÇÕES NECESSÁRIAS**
-
-#### **Pagamentos**
-**Online (Site):**
-- Mercado Pago e/ou PagSeguro
-- PIX (conta empresarial ou pessoal temporária)
-- Parcelamento: até 12x (a definir)
-- Boleto bancário
-
-**Manual (WhatsApp):**
-- Links de pagamento gerados manualmente
-- PIX
-- Cartão de crédito
-- Transferência bancária
-
-**Política de Preços:**
-- Preços já incluem taxas de cartão
-- Desconto à vista: 10-12% (equivalente à taxa da maquininha)
-- Classe A: foco em fechar sem desconto
-
-#### **Google Business**
-- Google Meu Negócio configurado
-- SEO local para Nova Lima/BH
-- Avaliações e fotos
-
-#### **Google Tag Manager**
-**ID do Container:** `GTM-PCR9HB87`
-
-**OBRIGATÓRIO:** Todas as páginas HTML do site devem incluir o código do Google Tag Manager.
-
-**Implementação:**
-
-Inserir no `<head>` de todas as páginas:
 ```html
-<!-- Google Tag Manager -->
+<!-- Head -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-PCR9HB87');</script>
-<!-- End Google Tag Manager -->
-```
 
-Inserir logo após a abertura do `<body>` de todas as páginas:
-```html
-<!-- Google Tag Manager (noscript) -->
+<!-- Body -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PCR9HB87"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 ```
 
-**Tags Gerenciadas pelo GTM:**
-- Google Analytics 4 (GA4)
-- Meta Pixel (Facebook/Instagram)
-- Conversões de WhatsApp
-- Eventos de e-commerce (visualização de produto, adicionar ao carrinho, compra)
-- Eventos personalizados
-
-#### **Ferramentas de Marketing**
+### Integrações
 - Google Analytics (via GTM)
-- Google Search Console
 - Meta Pixel (via GTM)
-- WhatsApp Business API (futuro)
-
-#### **E-mail Marketing**
-- Base de contatos (quando disponível)
-- Frequência: definir
-- Conteúdo: lançamentos, educativo, ofertas especiais
-
-### **REQUISITOS DE PERFORMANCE**
-
-**Otimização de Imagens:**
-- Formato: WebP preferencialmente
-- Tamanho máximo: 500KB por imagem
-- Dimensões produtos: 1200x1200px mínimo
-- Compressão sem perda de qualidade
-- Lazy loading implementado
-
-**SEO Técnico:**
-- Sitemap XML
-- Robots.txt otimizado
-- Schema markup para produtos
-- URLs amigáveis
-- Meta tags otimizadas
-- Open Graph para compartilhamento social
-
-**Velocidade:**
-- PageSpeed Insights: 80+ (mobile e desktop)
-- Caching configurado
-- CDN (se necessário)
-- Minificação CSS/JS
-
-### **RESPONSIVIDADE**
-
-**Breakpoints:**
-- Desktop: 1200px+
-- Tablet: 768px - 1199px
-- Mobile: 767px e menor
-
-**Prioridades Mobile:**
-- WhatsApp flutuante sempre visível
-- Menu hamburger otimizado
-- Imagens de produto em qualidade alta
-- CTAs grandes e clicáveis
-- Formulários simplificados
-
-### **SEGURANÇA**
-
-- Certificado SSL ativo
-- Backup diário automático
-- Proteção contra spam (reCAPTCHA)
-- Atualizações regulares de segurança
-- Firewall configurado
-
-### **ACESSIBILIDADE**
-
-- Contraste mínimo: 4.5:1 (textos normais)
-- Contraste mínimo: 7:1 (textos pequenos)
-- Alt text em todas as imagens
-- Navegação por teclado funcional
-- ARIA labels quando necessário
+- WhatsApp Business
+- Mercado Pago/PagSeguro
 
 ---
 
 ## PADRÕES E CONVENÇÕES
 
-### **NOMENCLATURA DE ARQUIVOS**
+### Nomenclatura Arquivos
 
-**Imagens de Produtos:**
+**Imagens Produtos:**
 ```
 [nome-produto]-[variacao]-[numero].ext
-
-Exemplos:
 obsidiana-preta-esfera-01.webp
-obsidiana-preta-esfera-ambiente-02.webp
-obsidiana-preta-esfera-detalhe-03.webp
 ```
 
-**Imagens de Blog:**
+**Imagens Blog:**
 ```
 [slug-artigo]-[descricao].ext
-
-Exemplo:
 propriedades-obsidiana-hero.webp
 ```
 
-**Documentos:**
+### Nomenclatura Produtos
 ```
-[categoria]-[nome-descritivo].ext
-
-Exemplo:
-certificado-autenticidade-obsidiana.pdf
-```
-
-### **NOMENCLATURA DE PRODUTOS**
-
-**Estrutura padrão:**
-```
-[Tipo de Pedra] [Característica] [Forma/Objeto] [Tamanho]
-
-Exemplos:
+[Tipo] [Característica] [Forma] [Tamanho]
 Obsidiana Preta Pura - Esfera 15cm
-Ametista Rosa - Borboleta Decorativa Grande
-Quartzo Transparente - Cristal Bruto 45kg
 ```
 
-### **URLs (SLUG)**
-
-**Padrão:**
+### URLs (Slug)
 ```
 /produto/[tipo-pedra]-[forma]-[tamanho]
-
-Exemplos:
 /produto/obsidiana-preta-esfera-15cm
-/produto/ametista-rosa-borboleta-grande
 ```
 
-**Categorias:**
-```
-/categoria/[nome-categoria]
+### Metadados Imagens
 
-Exemplos:
-/categoria/premium
-/categoria/esferas
-/categoria/cristais-para-jardim
-```
-
-### **METADADOS DE IMAGENS**
-
-Toda imagem de produto deve incluir:
-
-**Nome do arquivo:** SEO friendly (exemplo: `obsidiana-negra-esfera-premium.webp`)
-
-**Título da imagem:** Descritivo completo
-Exemplo: "Esfera de Obsidiana Preta Pura 15cm - Prisma Cristais"
-
+**Nome arquivo:** SEO friendly
+**Título:** Descritivo completo
 **Alt text:** Acessibilidade + SEO
-Exemplo: "Esfera de obsidiana preta pura de 15cm sobre base elegante, cristal premium para decoração"
-
 **Legenda:** Contexto adicional
-Exemplo: "Obsidiana preta pura de origem vulcânica, peça única museum-grade"
-
 **Descrição:** Informação completa
-Exemplo: "Esfera de obsidiana preta pura com 15cm de diâmetro, formação geológica rara, vidro vulcânico natural. Peça exclusiva da Prisma Cristais."
-
-**Categoria WooCommerce:**
-Exemplo: "Premium, Obsidiana, Esferas"
-
-**Etiquetas WooCommerce:**
-Exemplo: "obsidiana, preta, esfera, premium, decoração, vidro vulcânico"
-
-### **CATEGORIAS DE PRODUTOS**
-
-**Hierarquia:**
-```
-Premium
-├── Esferas
-├── Cristais Brutos Grandes
-├── Esculturas
-└── Móveis de Pedra
-
-Decorativo
-├── Para Casa
-├── Para Escritório
-└── Para Jardim
-
-Por Tipo de Pedra
-├── Obsidiana
-├── Ametista
-├── Quartzo
-└── Outros
-
-Por Ambiente
-├── Sala de Estar
-├── Quarto
-├── Escritório
-└── Jardim/Área Externa
-```
-
-### **TAGS DE PRODUTOS**
-
-**Tags obrigatórias:**
-- Tipo de pedra (obsidiana, ametista, etc.)
-- Cor (preta, rosa, transparente, etc.)
-- Forma (esfera, bruto, escultura, etc.)
-- Tamanho (pequeno, médio, grande, XG)
-- Ambiente (casa, escritório, jardim)
-- Propriedade (proteção, energia, decorativo)
+**Categoria:** Tags organizacionais
+**Etiquetas:** Keywords relevantes
 
 ---
 
 ## WORKFLOW DE CRIAÇÃO DE CONTEÚDO
 
-### **SISTEMA DE 3 CHATS**
+### Sistema de 3 Chats
 
-O processo de criação de conteúdo para produtos segue um workflow estruturado em 3 etapas separadas.
+#### CHAT 1 - Prompt Perplexity
+Input: Nome da peça
+Output: Prompt pesquisa formatado
 
-#### **CHAT 1 - Geração de Prompt de Pesquisa (Perplexity)**
+#### CHAT 2 - Storytelling
+Input: Pesquisa bruta
+Output: Descrições premium (longa + curta)
 
-**Função:** Criar prompts de pesquisa padronizados
-
-**Input:** Nome da peça
-**Output:** Prompt formatado para Perplexity
-
-**Template:**
-```
-Pesquise no Perplexity sobre a peça "[NOME DA PEÇA]" considerando:
-- História e simbolismo do objeto [FORMATO DA PEÇA]
-- Significado, origem e propriedades do cristal [TIPO DE PEDRA]
-- Contextos artísticos, culturais e decorativos
-- Narrativas emocionais e premium que valorizem exclusividade
-```
-
-#### **CHAT 2 - Criação do Storytelling**
-
-**Função:** Transformar pesquisa em descrições premium
-
-**Input:** Pesquisa bruta (texto ou anexo)
-**Output:**
-- Descrição Longa (storytelling completo WooCommerce)
-- Descrição Curta (resumo premium WooCommerce)
-
-**Diretrizes:**
+Diretrizes:
 - Nunca inventar informações
-- Transformar técnico em emocional
-- Manter credibilidade científica
-- Incluir estrutura de storytelling (gênese, raridade, história, ciência, energia, valor)
+- Técnico → Emocional
+- Credibilidade científica
+- Estrutura: gênese, raridade, história, ciência, energia, valor
 
-#### **CHAT 3 - Geração de Imagens + SEO**
+#### CHAT 3 - Imagens + SEO
+Input: Nome + fotos originais
+Output: 4 prompts + metadados completos
 
-**Função:** Criar prompts para IA e metadados completos
-
-**Input:** Nome da peça + fotos originais
-**Output:** 4 prompts de imagem + metadados SEO completos
-
-**Workflow:**
-1. Perguntar: "Esta peça será representada em ambiente interno ou externo?"
-2. Gerar 4 prompts diferentes (Google AI Studio - Nano Banana)
-3. Para cada prompt, fornecer:
-   - Nome do arquivo
-   - Título da imagem
+Workflow:
+1. Ambiente interno ou externo?
+2. Gerar 4 prompts (Google AI Studio)
+3. Metadados para cada:
+   - Nome arquivo
+   - Título
    - Alt text
    - Legenda
    - Descrição
    - Categoria WooCommerce
-   - Etiquetas WooCommerce
+   - Etiquetas
 
-**Regras:**
-- Todas as imagens em formato 1:1
-- Manter ângulo da foto original
-- Nunca alterar a peça, apenas ambiente/fundo
-- Linguagem premium alinhada à marca
-- Fundo com contexto apropriado (casa, escritório, jardim)
-
-### **CRONOGRAMA DE CONTEÚDO**
-
-**Fase 1 - Semanas 1-4:**
-- 10 produtos iniciais (premium)
-- Fotografia + tratamento
-- Storytelling completo
-- Upload no site
-
-**Mês 2:**
-- +10 peças novas
-- Refinamento de storytelling existente
-- SEO contínuo
-
-**Mês 3:**
-- +10 peças novas
-- Blog: 4 artigos/mês
-- Conteúdo aspiracional Instagram
-
-**Mês 4:**
-- +10 peças novas
-- Campanha de Natal
-- Foco em presentes exclusivos
-
-**Mês 5-6:**
-- +10 peças/mês
-- Consolidação de linhas
-- SEO nacional
+Regras:
+- Formato 1:1
+- Manter ângulo original
+- Não alterar peça
+- Linguagem premium
+- Contexto apropriado
 
 ---
 
 ## CHECKLIST DE QUALIDADE
 
-### **ANTES DE PUBLICAR UM PRODUTO**
+### Antes de Publicar Produto
 
 **Conteúdo:**
-- [ ] Nome do produto otimizado para SEO
-- [ ] Descrição curta (2-3 parágrafos premium)
-- [ ] Descrição longa (storytelling completo)
-- [ ] Especificações técnicas completas
-- [ ] Preço definido e conferido
-- [ ] Categoria(s) atribuída(s)
-- [ ] Tags relevantes adicionadas
+- [ ] Nome SEO otimizado
+- [ ] Descrição curta (2-3 parágrafos)
+- [ ] Descrição longa (storytelling)
+- [ ] Especificações técnicas
+- [ ] Preço correto
+- [ ] Categoria(s)
+- [ ] Tags relevantes
 
 **Imagens:**
-- [ ] Mínimo 4 imagens (principal, ambientação, detalhes, escala)
-- [ ] Formato WebP ou otimizado
-- [ ] Tamanho máximo 500KB cada
-- [ ] Dimensões mínimas 1200x1200px
-- [ ] Nome de arquivo SEO friendly
-- [ ] Alt text em todas
+- [ ] Mínimo 4 imagens
+- [ ] WebP otimizado
+- [ ] < 500KB cada
+- [ ] 1200x1200px mínimo
+- [ ] Nome SEO
+- [ ] Alt text todas
 - [ ] Título descritivo
-- [ ] Marca d'água aplicada
 
 **SEO:**
-- [ ] URL amigável (slug otimizado)
-- [ ] Meta title (50-60 caracteres)
-- [ ] Meta description (150-160 caracteres)
-- [ ] Schema markup de produto
-- [ ] Palavras-chave relevantes no texto
+- [ ] URL amigável
+- [ ] Meta title (50-60 chars)
+- [ ] Meta description (150-160 chars)
+- [ ] Schema markup
+- [ ] Palavras-chave
 
 **Técnico:**
-- [ ] Produto visível no catálogo
+- [ ] Produto visível
 - [ ] Estoque atualizado
-- [ ] Opções de envio configuradas
-- [ ] Produtos relacionados sugeridos
+- [ ] Envio configurado
+- [ ] Relacionados sugeridos
 - [ ] CTAs funcionando
-- [ ] Preview mobile conferido
+- [ ] Preview mobile OK
 
-### **ANTES DE PUBLICAR UM ARTIGO DE BLOG**
+### Antes de Publicar Blog
 
 **Conteúdo:**
-- [ ] Título otimizado para SEO (H1)
-- [ ] Subtítulos hierárquicos (H2, H3)
-- [ ] Mínimo 1.000 palavras
-- [ ] Informação técnica validada
-- [ ] Tom premium e educativo
-- [ ] CTA para produtos relacionados
-- [ ] Links internos para produtos/categorias
+- [ ] Título H1 SEO
+- [ ] Subtítulos H2/H3
+- [ ] Mínimo 1000 palavras
+- [ ] Info técnica validada
+- [ ] Tom premium
+- [ ] CTA produtos
+- [ ] Links internos
 
 **Mídia:**
-- [ ] Imagem destacada otimizada
-- [ ] Imagens ao longo do texto
-- [ ] Alt text em todas as imagens
-- [ ] Vídeos (quando aplicável)
+- [ ] Imagem destaque
+- [ ] Imagens no texto
+- [ ] Alt text todas
 
 **SEO:**
-- [ ] Palavra-chave principal definida
-- [ ] Palavra-chave no título, URL, primeiro parágrafo
-- [ ] Meta description atraente
-- [ ] Links externos relevantes
-- [ ] Links internos estratégicos
+- [ ] Palavra-chave principal
+- [ ] Keyword em título/URL/1º§
+- [ ] Meta description
+- [ ] Links externos
+- [ ] Links internos
 
 ---
 
-## OBSERVAÇÕES FINAIS
+## CONTATOS E INFORMAÇÕES
 
-### **RESPONSABILIDADES DA EQUIPE**
+### Localização
+```
+Nova Lima, Minas Gerais
+Atendemos Nova Lima, Belo Horizonte e região metropolitana
+```
 
-**Marcela & Múcio:**
-- Seleção de produtos
-- Fotografia inicial
-- Aprovação de textos e preços
-- Atendimento WhatsApp
-- Gestão de estoque
+### Contatos
+```
+E-mail: contato@prismacristais.com
+WhatsApp: (31) 99976-7916
+Instagram: @prismacristaisdecor
+Loja: https://prismacristais.com/loja/
+```
 
-**Léo (Geólogo):**
-- Informações técnicas das pedras
-- Validação científica
-- Suporte em negociações complexas
-- Lista de fornecedores
+---
 
-**FDJ Digital (Domínio Digital):**
-- Identidade visual
-- Site e e-commerce
-- Marketing digital
-- Conteúdo (storytelling)
-- SEO e tráfego
-- Automações
+## VALORES E FILOSOFIA
 
-### **VALORES E FILOSOFIA**
+### Compromissos da Marca
+1. Transparência total
+2. Exclusividade genuína
+3. Atendimento consultivo
+4. Credibilidade científica
+5. Qualidade premium
 
-**Compromissos da Marca:**
-1. Transparência total: todas as informações são verdadeiras e verificáveis
-2. Exclusividade genuína: cada peça premium é única
-3. Atendimento consultivo: cliente jamais será impedido de sonhar
-4. Credibilidade científica: Léo geólogo como validação
-5. Qualidade premium: desde a seleção até a entrega
-
-**Promessas ao Cliente:**
+### Promessas ao Cliente
 - Certificados de autenticidade
-- Embalagem premium e segura
-- Seguro obrigatório acima de valores definidos
-- Política transparente de devolução/troca
+- Embalagem premium segura
+- Seguro obrigatório
+- Política transparente
 - Atendimento personalizado
-- Consultoria presencial para projetos grandes
+- Consultoria presencial projetos grandes
 
 ---
 
-## ANEXOS E REFERÊNCIAS
+**Documento vivo - atualizar conforme evolução**
 
-### **DOCUMENTOS RELACIONADOS**
-
-- `/Arquivos de Contexto/Paleta de Cores Prisma Cristais.md` - Cores detalhadas
-- `/Arquivos de Contexto/Tipografia Oficial Prisma Cristais.md` - Tipografia completa
-- `/Logo/Apresentação Logo Prisma.md` - Conceito do logo
-- `/Texto/prompts_prisma_cristais.md` - Workflow de 3 chats
-- `/Obsidiana/Storytelling Completo para Obsidiana Preta Pura -.md` - Exemplo de storytelling
-- `/Plano de Ação/Plano Estratégico Prisma Cristais.md` - Cronograma executivo
-
-### **FERRAMENTAS UTILIZADAS**
-
-**Design:**
-- Canva (templates Instagram)
-- Photoshop/Lightroom (tratamento de imagens)
-- Google AI Studio - Nano Banana (geração de imagens)
-
-**Pesquisa:**
-- Perplexity (pesquisa de conteúdo)
-
-**Desenvolvimento:**
-- WordPress + WooCommerce
-- Google Fonts (Montserrat, Inter)
-
-**Marketing:**
-- Google Analytics
-- Google Search Console
-- Meta Business Suite
-- WhatsApp Business
+**Última revisão:** Outubro 2025
+**Desenvolvido por:** FDJ Digital
 
 ---
-
-**Documento vivo - atualizar conforme evolução do projeto**
-
-**Última revisão:** 21 de outubro de 2025
-**Próxima revisão:** A definir
-
----
-
-**© 2025 FDJ Digital - Material de uso exclusivo para Prisma Cristais**
