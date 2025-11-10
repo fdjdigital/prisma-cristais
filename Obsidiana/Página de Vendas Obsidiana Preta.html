@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esfera de Obsidiana Negra Premium - Prisma Cristais</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #1d1d1f;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+            /* Removido filter que estava tornando invisível */
+        }
+
+        .contact-btn {
+            background: linear-gradient(45deg, #1B365D, #2D5016);
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(27, 54, 93, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at center, rgba(27, 54, 93, 0.3) 0%, rgba(0, 0, 0, 0.8) 70%);
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 4.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+            background: linear-gradient(45deg, #ffffff, #e8b4a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            font-weight: 300;
+        }
+
+        .hero .tagline {
+            font-size: 1.2rem;
+            opacity: 0.7;
+            font-style: italic;
+            margin-bottom: 3rem;
+        }
+
+        /* Product Section */
+        .product-section {
+            background: white;
+            padding: 120px 0;
+            position: relative;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .product-image {
+            text-align: center;
+            position: relative;
+        }
+
+        .product-image::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(27, 54, 93, 0.1) 0%, transparent 70%);
+            transform: translate(-50%, -50%);
+            border-radius: 50%;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+            50% { opacity: 0.6; transform: translate(-50%, -50%) scale(1.1); }
+        }
+
+        .sphere {
+            width: 350px;
+            height: 350px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 20px;
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .sphere img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        .product-details h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            color: #1d1d1f;
+        }
+
+        .specs {
+            margin: 2rem 0;
+        }
+
+        .specs h3 {
+            color: #1B365D;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .specs ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .specs li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #f0f0f0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .specs li:last-child {
+            border-bottom: none;
+        }
+
+        /* Story Section */
+        .story-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 120px 0;
+        }
+
+        .story-content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .story-content h2 {
+            font-size: 3rem;
+            margin-bottom: 3rem;
+            color: #1d1d1f;
+            font-weight: 700;
+        }
+
+        .story-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+
+        .story-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .story-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .story-card h3 {
+            color: #1B365D;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .story-card p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #666;
+        }
+
+        /* Price Section */
+        .price-section {
+            background: linear-gradient(135deg, #1B365D 0%, #2D5016 100%);
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        .price-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .price {
+            font-size: 4rem;
+            font-weight: 700;
+            margin: 2rem 0;
+            color: #E8B4A0;
+        }
+
+        .price-details {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            background: linear-gradient(45deg, #E8B4A0, #F7E7CE);
+            color: #1B365D;
+            padding: 20px 40px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 1rem;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 35px rgba(232, 180, 160, 0.4);
+        }
+
+        /* Guarantee Section */
+        .guarantee-section {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .guarantee-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .guarantee-item {
+            padding: 2rem;
+        }
+
+        .guarantee-item h3 {
+            color: #1B365D;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .guarantee-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1d1d1f;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .footer .logo img {
+            height: 60px;
+            margin-bottom: 2rem;
+            /* Removido filter que estava tornando invisível */
+        }
+
+        .footer p {
+            opacity: 0.7;
+            margin-bottom: 1rem;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .product-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .story-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .guarantee-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sphere {
+                width: 250px;
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/dupw7dlag/image/upload/v1754514412/Prisma_Cristais_1_nil34r.png" alt="Prisma Cristais">
+            </div>
+            <a href="#contato" class="contact-btn">Solicitar Consulta</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Esfera de Obsidiana Negra</h1>
+            <p class="subtitle">Uma obra-prima da natureza, forjada há milhões de anos</p>
+            <p class="tagline">"Onde cada pedra revela sua luz única"</p>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-grid">
+                <div class="product-image">
+                    <div class="sphere">
+                        <img src="https://res.cloudinary.com/dupw7dlag/image/upload/v1754515602/Obsidiana_Jardim_lluuoj.png" alt="Esfera de Obsidiana Negra Premium">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h2>Pureza Absoluta</h2>
+                    <p style="font-size: 1.3rem; line-height: 1.7; margin-bottom: 2rem; color: #666;">
+                        Esta não é apenas uma pedra. É um espelho negro perfeito, polido pela natureza e lapidado por mestres artesãos. Cada reflexo conta a história de milênios de formação vulcânica, resultando em uma superfície tão pura que você pode ver sua própria alma refletida.
+                    </p>
+                    
+                    <div class="specs">
+                        <h3>Especificações Técnicas</h3>
+                        <ul>
+                            <li><strong>Diâmetro:</strong> <span>30 centímetros</span></li>
+                            <li><strong>Peso:</strong> <span>25 quilogramas</span></li>
+                            <li><strong>Pureza:</strong> <span>Gema Premium (95%+)</span></li>
+                            <li><strong>Origem:</strong> <span>Vulcões do México</span></li>
+                            <li><strong>Lapidação:</strong> <span>Espelhada artesanal</span></li>
+                            <li><strong>Certificação:</strong> <span>Gemológica incluída</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story-section">
+        <div class="container">
+            <div class="story-content">
+                <h2>A Jornada de Uma Pedra Única</h2>
+                <p style="font-size: 1.3rem; line-height: 1.8; color: #666; margin-bottom: 3rem;">
+                    Cada esfera de obsidiana negra carrega em si a força dos vulcões ancestrais. Formada pelo resfriamento rápido da lava, esta pedra transcende gerações, culturas e continentes, chegando até você como uma obra de arte natural incomparável.
+                </p>
+                
+                <div class="story-grid">
+                    <div class="story-card">
+                        <h3>Origem Vulcânica</h3>
+                        <p>Nascida no coração ardente dos vulcões mexicanos, onde temperaturas de mais de 1.200°C moldaram sua estrutura cristalina perfeita ao longo de milhares de anos.</p>
+                    </div>
+                    <div class="story-card">
+                        <h3>Lapidação Artesanal</h3>
+                        <p>Cada esfera é cuidadosamente polida por artesãos especializados, um processo que pode levar semanas para alcançar o reflexo espelhado perfeito que caracteriza esta peça.</p>
+                    </div>
+                    <div class="story-card">
+                        <h3>Energia Ancestral</h3>
+                        <p>Utilizada por civilizações antigas como espelho sagrado e ferramenta de contemplação, a obsidiana negra é reconhecida por sua capacidade de amplificar a introspecção e clareza mental.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Heritage Section -->
+    <section style="background: #1d1d1f; padding: 120px 0; color: white;">
+        <div class="container">
+            <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 3rem; margin-bottom: 3rem; font-weight: 700;">Herança de Civilizações Ancestrais</h2>
+                <p style="font-size: 1.4rem; line-height: 1.8; margin-bottom: 4rem; opacity: 0.9;">
+                    Por milênios, a obsidiana negra foi reverenciada por grandes civilizações. Os astecas chamavam-na de "Espelho dos Deuses", acreditando que suas superfícies espelhadas revelavam verdades ocultas. Maias a utilizavam em rituais sagrados, enquanto xamãs ao redor do mundo a consideravam uma ponte entre dimensões.
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 3rem; margin-top: 4rem;">
+                    <div class="story-card" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2);">
+                        <h3 style="color: #E8B4A0; font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 600;">O Espelho da Alma</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.7; opacity: 0.9;">
+                            Na tradição ancestral, olhar para uma esfera de obsidiana negra era como contemplar a profundidade da própria alma. Sua superfície perfeita não apenas reflete a imagem física, mas convida à reflexão interior, proporcionando momentos de clareza mental e autoconhecimento.
+                        </p>
+                    </div>
+                    <div class="story-card" style="background: rgba(255,255,255,0.1); color: white; border: 1px solid rgba(255,255,255,0.2);">
+                        <h3 style="color: #E8B4A0; font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 600;">Proteção e Purificação</h3>
+                        <p style="font-size: 1.1rem; line-height: 1.7; opacity: 0.9;">
+                            Acredita-se que a obsidiana negra possui propriedades purificadoras extraordinárias, absorvendo energias negativas do ambiente e das pessoas ao seu redor. Sua presença cria um campo de proteção sutil, transformando qualquer espaço em um santuário de paz e harmonia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formation Section -->
+    <section style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 120px 0;">
+        <div class="container">
+            <div style="max-width: 1000px; margin: 0 auto;">
+                <h2 style="font-size: 3rem; margin-bottom: 3rem; text-align: center; color: #1d1d1f; font-weight: 700;">O Nascimento de Uma Obra-Prima</h2>
+                
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 4rem;">
+                    <div class="story-card" style="text-align: center;">
+                        <div style="background: #1B365D; color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 2rem; font-weight: bold;">1</div>
+                        <h3 style="color: #1B365D; margin-bottom: 1rem; font-size: 1.3rem;">Erupção Vulcânica</h3>
+                        <p style="color: #666; line-height: 1.6;">Lava riolítica emerge dos vulcões a temperaturas superiores a 1.200°C, carregando silicatos puros que darão origem à obsidiana.</p>
+                    </div>
+                    <div class="story-card" style="text-align: center;">
+                        <div style="background: #2D5016; color: white; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 2rem; font-weight: bold;">2</div>
+                        <h3 style="color: #2D5016; margin-bottom: 1rem; font-size: 1.3rem;">Resfriamento Instantâneo</h3>
+                        <p style="color: #666; line-height: 1.6;">O contato súbito com o ar frio cristaliza a lava em segundos, criando uma estrutura vítrea de pureza extraordinária.</p>
+                    </div>
+                    <div class="story-card" style="text-align: center;">
+                        <div style="background: #E8B4A0; color: #1d1d1f; width: 80px; height: 80px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 2rem; font-weight: bold;">3</div>
+                        <h3 style="color: #1B365D; margin-bottom: 1rem; font-size: 1.3rem;">Lapidação Perfeita</h3>
+                        <p style="color: #666; line-height: 1.6;">Meses de trabalho artesanal transformam o fragmento bruto em uma esfera perfeita, polida até atingir o reflexo espelhado ideal.</p>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 3rem; border-radius: 20px; margin-top: 4rem; box-shadow: 0 10px 40px rgba(0,0,0,0.1);">
+                    <h3 style="color: #1B365D; font-size: 1.5rem; margin-bottom: 2rem; text-align: center;">A Ciência Por Trás da Beleza</h3>
+                    <p style="font-size: 1.1rem; line-height: 1.8; color: #666; text-align: center;">
+                        A obsidiana negra possui uma composição química única, com 70-75% de sílica (SiO₂), conferindo-lhe dureza de 5-6 na escala Mohs e densidade de 2,4 g/cm³. Sua estrutura molecular amorfa permite a criação de superfícies espelhadas naturais, um fenômeno raro na natureza que a torna verdadeiramente excepcional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Applications Section -->
+    <section style="background: white; padding: 120px 0;">
+        <div class="container">
+            <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+                <h2 style="font-size: 3rem; margin-bottom: 2rem; color: #1d1d1f; font-weight: 700;">Onde Sua Luz Única Se Revela</h2>
+                <p style="font-size: 1.3rem; line-height: 1.8; color: #666; margin-bottom: 5rem;">
+                    Uma esfera de obsidiana negra transcende decoração - ela transforma ambientes, criando pontos focais de contemplação e sofisticação onde quer que seja posicionada.
+                </p>
+                
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 4rem;">
+                    <div class="story-card" style="text-align: center;">
+                        <div style="border-radius: 20px; overflow: hidden; margin-bottom: 2rem; box-shadow: 0 15px 40px rgba(0,0,0,0.15); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <img src="https://res.cloudinary.com/dupw7dlag/image/upload/v1754515602/Obsidiana_Escrit%C3%B3rio_igstht.png" alt="Obsidiana em Escritório Executivo" style="width: 100%; height: 250px; object-fit: cover;">
+                        </div>
+                        <h3 style="color: #1B365D; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 600;">Poder Executivo</h3>
+                        <p style="color: #666; line-height: 1.7; font-size: 1rem;">
+                            No escritório, ela se torna um símbolo de liderança e visão estratégica. Cada reflexão lembra que as grandes decisões nascem de momentos de contemplação profunda.
+                        </p>
+                    </div>
+                    
+                    <div class="story-card" style="text-align: center;">
+                        <div style="border-radius: 20px; overflow: hidden; margin-bottom: 2rem; box-shadow: 0 15px 40px rgba(0,0,0,0.15); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <img src="https://res.cloudinary.com/dupw7dlag/image/upload/v1754515602/Obsidiana_Casa_ql93lq.png" alt="Obsidiana em Living Premium" style="width: 100%; height: 250px; object-fit: cover;">
+                        </div>
+                        <h3 style="color: #2D5016; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 600;">Elegância Residencial</h3>
+                        <p style="color: #666; line-height: 1.7; font-size: 1rem;">
+                            Na sala de estar, cria um ponto focal de conversação e admiração. Sua presença eleva o ambiente, transformando qualquer espaço em um refúgio de sofisticação.
+                        </p>
+                    </div>
+                    
+                    <div class="story-card" style="text-align: center;">
+                        <div style="border-radius: 20px; overflow: hidden; margin-bottom: 2rem; box-shadow: 0 15px 40px rgba(0,0,0,0.15); transition: transform 0.3s ease;" onmouseover="this.style.transform='translateY(-10px)'" onmouseout="this.style.transform='translateY(0)'">
+                            <img src="https://res.cloudinary.com/dupw7dlag/image/upload/v1754515602/Obsidiana_Jardim_lluuoj.png" alt="Obsidiana em Jardim Zen" style="width: 100%; height: 250px; object-fit: cover;">
+                        </div>
+                        <h3 style="color: #E8B4A0; font-size: 1.4rem; margin-bottom: 1rem; font-weight: 600;">Harmonia Natural</h3>
+                        <p style="color: #666; line-height: 1.7; font-size: 1rem;">
+                            No jardim, conecta os elementos naturais com a energia ancestral da terra. Sob a luz do sol ou da lua, revela reflexos únicos que mudam a cada momento do dia.
+                        </p>
+                    </div>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #f8f9fa, #e9ecef); padding: 3rem; border-radius: 25px; margin-top: 5rem;">
+                    <h3 style="color: #1B365D; font-size: 1.6rem; margin-bottom: 2rem;">O Efeito Transformador</h3>
+                    <p style="font-size: 1.2rem; line-height: 1.8; color: #666;">
+                        Independente do ambiente escolhido, uma esfera de obsidiana negra de 30cm não passa despercebida. Ela capta a luz ambiente e a transforma em reflexos únicos, criando uma experiência visual e energética que muda ao longo do dia. É uma peça que conversa com seu espaço, revelando novas nuances a cada olhar.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price-section">
+        <div class="container">
+            <div class="price-content">
+                <h2>Uma Obra de Arte Para Toda a Vida</h2>
+                <div class="price">R$ 30.000</div>
+                <p class="price-details">
+                    Este investimento vai muito além de uma simples decoração. Você está adquirindo uma peça única, com certificação gemológica, que se valoriza com o tempo e transforma qualquer ambiente em um espaço de contemplação e sofisticação.
+                </p>
+                <a href="#contato" class="cta-button">Solicitar Consulta Personalizada</a>
+                <a href="#contato" class="cta-button" style="background: transparent; border: 2px solid #E8B4A0; color: #E8B4A0;">Agendar Visita Presencial</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee Section -->
+    <section class="guarantee-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 3rem; color: #1d1d1f;">Nossa Garantia de Exclusividade</h2>
+            <div class="guarantee-grid">
+                <div class="guarantee-item">
+                    <h3>🏆 Certificação Gemológica</h3>
+                    <p>Cada peça acompanha certificado de autenticidade emitido por gemólogo registrado, garantindo origem, pureza e qualidade.</p>
+                </div>
+                <div class="guarantee-item">
+                    <h3>🚚 Entrega Segura</h3>
+                    <p>Embalagem especializada com seguro total. Entregamos pessoalmente em Nova Lima e região, ou via transportadora premium para todo Brasil.</p>
+                </div>
+                <div class="guarantee-item">
+                    <h3>💎 Consultoria Vitalícia</h3>
+                    <p>Suporte permanente para cuidados, limpeza energética e orientações sobre o melhor posicionamento da sua peça no ambiente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <img src="https://res.cloudinary.com/dupw7dlag/image/upload/v1754514412/Prisma_Cristais_1_nil34r.png" alt="Prisma Cristais">
+            </div>
+            <p><strong>Prisma Cristais</strong> - Onde cada pedra revela sua luz única</p>
+            <p>Nova Lima, Minas Gerais | Consultas e visitas mediante agendamento</p>
+            <p>WhatsApp: (31) 99999-9999 | E-mail: contato@prismacristais.com.br</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 100) {
+                header.style.background = 'rgba(0, 0, 0, 0.98)';
+            } else {
+                header.style.background = 'rgba(0, 0, 0, 0.95)';
+            }
+        });
+    </script>
+</body>
+</html>
