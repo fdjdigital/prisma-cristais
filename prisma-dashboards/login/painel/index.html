@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Dashboards | Prisma Cristais</title>
+    <meta name="description" content="Escolha o dashboard que deseja visualizar">
+    
+    <!-- Google Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Cores Prisma Cristais */
+            --turmalina-paraiba: #15B6B8;
+            --turmalina-secundaria: #099D7F;
+            --prisma-black: #000000;
+            --crystal-white: #FFFFFF;
+            --graphite: #2C2C2C;
+            --slate: #6B6B6B;
+            --pearl: #F5F5F5;
+            --mist: #FAFAFA;
+            --champagne-gold: #C9A96E;
+            
+            /* Tipografia */
+            --font-primary: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            --font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-secondary);
+            line-height: 1.6;
+            color: var(--graphite);
+            background: linear-gradient(135deg, var(--mist) 0%, var(--pearl) 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 15px 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(21, 182, 184, 0.1);
+        }
+
+        .header .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            height: 60px;
+            width: auto;
+        }
+
+        /* Dashboard Selection Section */
+        .dashboard-section {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 140px 20px 80px;
+        }
+
+        .dashboard-container {
+            max-width: 900px;
+            width: 100%;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .dashboard-header h1 {
+            font-family: var(--font-primary);
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: var(--prisma-black);
+            margin-bottom: 15px;
+        }
+
+        .dashboard-header p {
+            font-family: var(--font-secondary);
+            font-size: 1.2rem;
+            color: var(--slate);
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .dashboard-card {
+            background: var(--crystal-white);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .dashboard-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(21, 182, 184, 0.2);
+        }
+
+        .dashboard-card.coming-soon {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .dashboard-card.coming-soon:hover {
+            transform: none;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+        }
+
+        .dashboard-icon {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            display: inline-block;
+        }
+
+        .dashboard-card h2 {
+            font-family: var(--font-primary);
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--prisma-black);
+            margin-bottom: 10px;
+        }
+
+        .dashboard-card p {
+            font-family: var(--font-secondary);
+            font-size: 1rem;
+            color: var(--slate);
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-family: var(--font-primary);
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .badge-active {
+            background: linear-gradient(135deg, var(--turmalina-paraiba), var(--turmalina-secundaria));
+            color: var(--crystal-white);
+        }
+
+        .badge-soon {
+            background: var(--pearl);
+            color: var(--slate);
+        }
+
+        /* Logout Button */
+        .logout-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .btn-logout {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: transparent;
+            color: var(--slate);
+            padding: 14px 32px;
+            border: 2px solid var(--pearl);
+            border-radius: 50px;
+            font-family: var(--font-primary);
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .btn-logout:hover {
+            border-color: var(--turmalina-paraiba);
+            color: var(--turmalina-paraiba);
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--graphite);
+            color: var(--crystal-white);
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .legal-info {
+            font-family: var(--font-secondary);
+            font-size: 0.9rem;
+            color: #999;
+        }
+
+        .legal-info p {
+            margin-bottom: 10px;
+            color: #999;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .dashboard-header h1 {
+                font-size: 2rem;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .logo {
+                height: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <img src="../../images/logo-horizontal.png" alt="Logo Prisma Cristais" class="logo">
+        </div>
+    </header>
+
+    <!-- Dashboard Selection -->
+    <section class="dashboard-section">
+        <div class="dashboard-container">
+            <div class="dashboard-header">
+                <h1>Painel de Dashboards</h1>
+                <p>Escolha o painel que deseja visualizar</p>
+            </div>
+
+            <div class="dashboard-grid">
+                <!-- Dashboard Tráfego Pago -->
+                <a href="trafego-pago/" class="dashboard-card">
+                    <div class="dashboard-icon">📊</div>
+                    <h2>Tráfego Pago</h2>
+                    <p>Métricas e análises de campanhas de tráfego pago e anúncios digitais</p>
+                    <span class="badge badge-active">Disponível</span>
+                </a>
+
+                <!-- Dashboard Geral -->
+                <a href="geral/" class="dashboard-card">
+                    <div class="dashboard-icon">📈</div>
+                    <h2>Dashboard Geral</h2>
+                    <p>Visão geral de métricas, vendas e performance do negócio</p>
+                    <span class="badge badge-active">Disponível</span>
+                </a>
+            </div>
+
+            <div class="logout-container">
+                <button onclick="logout()" class="btn-logout">
+                    <span>🚪</span>
+                    <span>Sair</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="legal-info">
+                    <p>Copyright © 2025 Prisma Cristais. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Check authentication
+        window.addEventListener('load', function() {
+            const authenticated = sessionStorage.getItem('authenticated');
+            const authTime = sessionStorage.getItem('authTime');
+            const currentTime = new Date().getTime();
+            
+            // Session expires after 24 hours
+            if (!authenticated || !authTime || (currentTime - authTime) > (24 * 60 * 60 * 1000)) {
+                window.location.href = '../';
+            }
+        });
+
+        // Logout function
+        function logout() {
+            sessionStorage.removeItem('authenticated');
+            sessionStorage.removeItem('authTime');
+            window.location.href = '../';
+        }
+
+        // Remove index.html from URL if present
+        if (window.location.pathname.endsWith('/index.html')) {
+            const newPath = window.location.pathname.replace('/index.html', '/');
+            window.history.replaceState({}, document.title, newPath + window.location.search + window.location.hash);
+        }
+    </script>
+</body>
+</html>

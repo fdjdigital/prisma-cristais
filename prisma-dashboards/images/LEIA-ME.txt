@@ -1,0 +1,23 @@
+# ADICIONE A LOGO AQUI
+
+📁 **Nome do arquivo:** logo-prisma-cristais.png
+
+## Especificações:
+
+- **Formato:** PNG com fundo transparente
+- **Altura recomendada:** 120-150px
+- **Largura:** Proporcional à altura
+- **Qualidade:** Alta resolução
+- **Nome exato:** logo-prisma-cristais.png
+
+## Instruções:
+
+1. Prepare sua logo da Prisma Cristais
+2. Salve com o nome: `logo-prisma-cristais.png`
+3. Coloque nesta pasta (`images/`)
+4. Apague este arquivo de instrução
+5. Teste o sistema abrindo `/login/`
+
+---
+
+**IMPORTANTE:** O sistema NÃO funcionará corretamente sem a logo!
