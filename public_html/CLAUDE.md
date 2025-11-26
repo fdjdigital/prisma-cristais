@@ -308,7 +308,7 @@ Site institucional: Home, Sobre, Blog, Contato.
 ```html
 <!-- Breadcrumb -->
 <div class="article-breadcrumb">
-    <a href="/home/">Home</a> / <a href="/blog/">Blog</a> / Título
+    <a href="/">Home</a> / <a href="/blog/">Blog</a> / Título
 </div>
 
 <!-- Cabeçalho -->

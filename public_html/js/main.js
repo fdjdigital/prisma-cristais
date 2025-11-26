@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // Comparar paths
       if (linkPath === currentPath ||
-          (currentPath.includes(linkPath) && linkPath !== '/home/')) {
+          (currentPath.includes(linkPath) && linkPath !== '/')) {
         link.classList.add('active');
       }
     });
