@@ -58,16 +58,16 @@
     <!-- Header -->
     <header class="header">
         <div class="header-container">
-            <a href="/" class="logo-link">
+            <a href="../home/" class="logo-link">
                 <img src="../images/logo-horizontal.png" alt="Prisma Cristais - Logo" class="logo">
             </a>
 
             <nav class="nav">
                 <ul class="nav-list">
-                    <li><a href="/" class="nav-link">Home</a></li>
-                    <li><a href="/sobre/" class="nav-link">Sobre</a></li>
-                    <li><a href="/blog/" class="nav-link active">Blog</a></li>
-                    <li><a href="/contato/" class="nav-link">Contato</a></li>
+                    <li><a href="../home/" class="nav-link">Home</a></li>
+                    <li><a href="../sobre/" class="nav-link">Sobre</a></li>
+                    <li><a href="./" class="nav-link active">Blog</a></li>
+                    <li><a href="../contato/" class="nav-link">Contato</a></li>
                     <li><a href="https://prismacristais.com/loja/" class="nav-link nav-link-loja" target="_blank" rel="noopener">Loja Online</a></li>
                 </ul>
             </nav>
@@ -95,8 +95,34 @@
     <section class="section">
         <div class="container">
             <div class="blog-grid">
-                <!-- Post 1: Cristais Monumentais -->
-                <article class="blog-card fade-in" onclick="window.location.href='/blog/cristais-monumentais/';" style="cursor: pointer;">
+                <!-- Post 1: Diferenças Cristal Raro -->
+                <article class="blog-card fade-in" onclick="window.location.href='diferencas-cristal-raro/';" style="cursor: pointer;">
+                    <img
+                        src="../images/cuidados-essenciais-com-cristais-premium-prisma-cristais.webp"
+                        alt="O que diferencia um cristal comum de uma peça realmente rara - fatores científicos de raridade e valor"
+                        title="Cristais Raros vs Comuns - A Ciência da Exclusividade"
+                        width="400"
+                        height="220"
+                        loading="lazy"
+                        decoding="async"
+                        class="blog-image">
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span>📅 Dezembro 2025</span>
+                            <span>📖 12 min</span>
+                        </div>
+                        <h2 class="blog-title">O Que Diferencia um Cristal Comum de uma Peça Realmente Rara?</h2>
+                        <p class="blog-excerpt">
+                            Descubra os fatores científicos e geológicos que determinam a raridade: origem química,
+                            os 4Cs, propriedades ópticas exclusivas e raridade geográfica que separam peças
+                            comuns de gemas extraordinárias.
+                        </p>
+                        <a href="diferencas-cristal-raro/" class="card-link">Ler artigo completo →</a>
+                    </div>
+                </article>
+
+                <!-- Post 2: Cristais Monumentais -->
+                <article class="blog-card fade-in-delay-1" onclick="window.location.href='cristais-monumentais/';" style="cursor: pointer;">
                     <img
                         src="../images/decoracao-premium-com-cristais-em-ambiente-luxuoso-prisma-cristais.webp"
                         alt="Decoração premium com cristais monumentais gigantes em ambiente luxuoso - cristais de 30kg a 600kg transformando mansões e espaços sofisticados"
@@ -117,12 +143,12 @@
                             em verdadeiros santuários de beleza natural. Das catedrais de ametista às esferas
                             monumentais, conheça peças que transcendem gerações.
                         </p>
-                        <a href="/blog/cristais-monumentais/" class="card-link">Ler artigo completo →</a>
+                        <a href="cristais-monumentais/" class="card-link">Ler artigo completo →</a>
                     </div>
                 </article>
 
-                <!-- Post 2: Inclusões em Gemas -->
-                <article class="blog-card fade-in-delay-1" onclick="window.location.href='/blog/inclusoes-gemas/';" style="cursor: pointer;">
+                <!-- Post 3: Inclusões em Gemas -->
+                <article class="blog-card fade-in-delay-2" onclick="window.location.href='inclusoes-gemas/';" style="cursor: pointer;">
                     <img
                         src="../images/essencia-prisma-cristais-sobre-autenticidade-exclusividade-decoracao-premium.webp"
                         alt="Cristais premium da Prisma Cristais - autenticidade, exclusividade e beleza natural em decoração de luxo"
@@ -143,12 +169,12 @@
                             que revelam autenticidade, história geológica e exclusividade de cada cristal natural.
                             Da imperfeição à beleza.
                         </p>
-                        <a href="/blog/inclusoes-gemas/" class="card-link">Ler artigo completo →</a>
+                        <a href="inclusoes-gemas/" class="card-link">Ler artigo completo →</a>
                     </div>
                 </article>
 
-                <!-- Post 3: Tendências de Decoração com Cristais -->
-                <article class="blog-card fade-in-delay-2" onclick="window.location.href='/blog/tendencias-decoracao-cristais/';" style="cursor: pointer;">
+                <!-- Post 4: Tendências de Decoração com Cristais -->
+                <article class="blog-card fade-in-delay-3" onclick="window.location.href='tendencias-decoracao-cristais/';" style="cursor: pointer;">
                     <img
                         src="../images/tendencias-decoracao-com-cristais-2025-prisma-cristais.webp"
                         alt="Tendências de decoração com cristais em 2025 - design de interiores premium com cristais naturais"
@@ -169,7 +195,7 @@
                             Das peças escultóricas aos jardins de cristais, conheça as tendências que estão
                             transformando espaços sofisticados.
                         </p>
-                        <a href="/blog/tendencias-decoracao-cristais/" class="card-link">Ler artigo completo →</a>
+                        <a href="tendencias-decoracao-cristais/" class="card-link">Ler artigo completo →</a>
                     </div>
                 </article>
 
@@ -190,7 +216,7 @@
             </p>
             <div class="btn-group">
                 <a href="https://prismacristais.com/loja/" class="btn btn-primary" target="_blank" rel="noopener">Visitar Loja Online</a>
-                <a href="/contato/" class="btn btn-outline">Fale Conosco</a>
+                <a href="../contato/" class="btn btn-outline">Fale Conosco</a>
             </div>
         </div>
     </section>
@@ -211,10 +237,10 @@
                 <div class="footer-section">
                     <h3>Navegação</h3>
                     <div class="footer-links">
-                        <a href="/" class="footer-link">Home</a>
-                        <a href="/sobre/" class="footer-link">Sobre Nós</a>
-                        <a href="/blog/" class="footer-link">Blog</a>
-                        <a href="/contato/" class="footer-link">Contato</a>
+                        <a href="../home/" class="footer-link">Home</a>
+                        <a href="../sobre/" class="footer-link">Sobre Nós</a>
+                        <a href="./" class="footer-link">Blog</a>
+                        <a href="../contato/" class="footer-link">Contato</a>
                         <a href="https://prismacristais.com/loja/" class="footer-link" target="_blank" rel="noopener">Loja Online</a>
                     </div>
                 </div>
