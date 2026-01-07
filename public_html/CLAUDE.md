@@ -856,12 +856,18 @@ Loja: https://prismacristais.com/loja/
 5. Qualidade premium
 
 ### Promessas ao Cliente
-- Certificados de autenticidade
 - Embalagem premium segura
 - Seguro obrigatório
 - Política transparente
 - Atendimento personalizado
 - Consultoria presencial projetos grandes
+
+### IMPORTANTE: Certificados e Garantias
+**A Prisma Cristais NÃO fornece certificados de autenticidade ou garantias formais de autenticidade das peças.**
+- Não emitimos certificados gemológicos (GIA, IGI, etc.)
+- Não oferecemos laudos técnicos formais
+- A autenticidade das peças é baseada na confiança e na procedência do fornecedor geólogo
+- Evitar mencionar "certificados de autenticidade" em qualquer comunicação do site
 
 ---
 
