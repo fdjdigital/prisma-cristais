@@ -13,9 +13,21 @@
       "Bash(test:*)",
       "Bash(tree:*)",
       "Bash(ls:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(curl -s -X GET \"https://app.asana.com/api/1.0/users/me\" -H \"Authorization: Bearer 2/1211521454810866/1212839492197315:76fb5fa15f0efc97982a1fae04188b79\")",
+      "Bash(curl:*)",
+      "Bash(git -C /Users/tiagoborges/Documents/Projetos-Marketing-Vantt/prisma-cristais remote -v)",
+      "Bash(gh secret set:*)",
+      "Bash(gh secret list:*)",
+      "Bash(gh workflow run:*)",
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)"
     ],
     "deny": [],
     "ask": []
-  }
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "asana"
+  ]
 }
