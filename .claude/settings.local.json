@@ -21,7 +21,15 @@
       "Bash(gh secret list:*)",
       "Bash(gh workflow run:*)",
       "Bash(gh run list:*)",
-      "Bash(gh run view:*)"
+      "Bash(gh run view:*)",
+      "Bash(gh api:*)",
+      "Bash(gh repo view:*)",
+      "Bash(dig:*)",
+      "Bash(cp:*)",
+      "Bash(for i in 1 2 3 4)",
+      "Bash(do)",
+      "Bash(sips -s format png:*)",
+      "Bash(done)"
     ],
     "deny": [],
     "ask": []
